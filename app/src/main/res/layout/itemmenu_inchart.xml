@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:gravity="center"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtgetNamaMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Menu"/>
+
+        <TextView
+            android:id="@+id/txtgetHarga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harga Satuan Menu"/>
+
+        <TextView
+            android:id="@+id/txtgetKatMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kategori Menu"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txtgetJumlahPesan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Qty"/>
+
+            <Button
+                android:id="@+id/btPlus"
+                android:text="+"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btMin"
+                android:text="-"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1.99"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="6pt"
+            android:text="Total Bayar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"/>
+
+        <TextView
+            android:id="@+id/txtgetTotalBayar"
+            android:textColor="#009688"
+            android:textSize="11pt"
+            android:textStyle="bold"
+            android:text="Rp. 11000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+</LinearLayout>
